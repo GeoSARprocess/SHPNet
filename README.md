@@ -7,8 +7,9 @@
 Official PyTorch implementation of **SHPNet** for fine-grained aircraft detection in SAR imagery.
 
 > **SHPNet: Shape-Aware Contrastive Learning and Hierarchical Semantic Prediction for Fine-Grained SAR Aircraft Detection**  
-> *Ru Luo, Lingjun Zhao, Qishan He, Siqian Zhang, Kefeng Ji*  
+> *Ru Luo, Lingjun Zhao, Qishan He, Siqian Zhang, Kefeng Ji*
 
+---
 
 ## 📖 Overview
 
@@ -16,7 +17,7 @@ Official PyTorch implementation of **SHPNet** for fine-grained aircraft detectio
 
 | Bottleneck | Our Solution |
 |:---|:---|
-| **Azimuth-sensitive scattering** → unstable feature representations | **ShapeCL**: geometric structural consistency with contrastive learning to enhance intra-class consistency feature learning against azimuth-sensitive scattering signature |
+| **Azimuth-sensitive scattering** → unstable feature representations | **ShapeCL**: geometric structural consistency with contrastive learning to enhance intra-class feature learning against azimuth-sensitive scattering |
 | **Flat classification** → semantic confusion among similar subcategories | **HPH**: progressive coarse-to-fine hierarchical prediction |
 
 **Key results:**
@@ -30,32 +31,36 @@ Official PyTorch implementation of **SHPNet** for fine-grained aircraft detectio
   <em>Figure 1: Overall framework of SHPNet.</em>
 </p>
 
-<h2>📊 Experimental Results</h2>
+---
 
-<h3>Performance on SAR-RADD Dataset</h3>
-<table>
-  <tr><th>Category</th><th>AP (%)</th><th>Category</th><th>AP (%)</th></tr>
-  <tr><td>A</td><td>92.3</td><td>H</td><td>71.7</td></tr>
-  <tr><td>B</td><td>92.8</td><td>I</td><td>90.1</td></tr>
-  <tr><td>C</td><td>91.0</td><td>J</td><td>76.1</td></tr>
-  <tr><td>D</td><td>78.4</td><td>K</td><td>43.1</td></tr>
-  <tr><td>E</td><td>84.6</td><td>L</td><td>79.2</td></tr>
-  <tr><td>F</td><td>79.1</td><td>M</td><td>90.5</td></tr>
-  <tr><td>G</td><td>78.2</td><td>-</td><td>-</td></tr>
-</table>
-<p><strong>Overall: mAP = 80.5%</strong></p>
+## 📊 Experimental Results
 
-<h3>Performance on FAIR-CSAR Dataset</h3>
-<table>
-  <tr><th>Category</th><th>AP (%)</th><th>Category</th><th>AP (%)</th></tr>
-  <tr><td>A220</td><td>61.6</td><td>B767</td><td>56.1</td></tr>
-  <tr><td>A320</td><td>37.7</td><td>B777</td><td>22.3</td></tr>
-  <tr><td>A330</td><td>69.7</td><td>Fokker-50</td><td>76.2</td></tr>
-  <tr><td>Airfreighter</td><td>48.0</td><td>Gulfstream</td><td>37.3</td></tr>
-  <tr><td>B737</td><td>70.7</td><td>Helicopter</td><td>77.7</td></tr>
-  <tr><td>B747</td><td>70.1</td><td>Other</td><td>24.6</td></tr>
-</table>
-<p><strong>Overall: mAP = 54.3%</strong></p>
+### Performance on SAR-RADD Dataset
+
+| Category | AP (%) | Category | AP (%) |
+|:---|:---:|:---|:---:|
+| A | 92.3 | H | 71.7 |
+| B | 92.8 | I | 90.1 |
+| C | 91.0 | J | 76.1 |
+| D | 78.4 | K | 43.1 |
+| E | 84.6 | L | 79.2 |
+| F | 79.1 | M | 90.5 |
+| G | 78.2 | - | - |
+
+**Overall: mAP = 80.5%**
+
+### Performance on FAIR-CSAR Dataset
+
+| Category | AP (%) | Category | AP (%) |
+|:---|:---:|:---|:---:|
+| A220 | 61.6 | B767 | 56.1 |
+| A320 | 37.7 | B777 | 22.3 |
+| A330 | 69.7 | Fokker-50 | 76.2 |
+| Airfreighter | 48.0 | Gulfstream | 37.3 |
+| B737 | 70.7 | Helicopter | 77.7 |
+| B747 | 70.1 | Other | 24.6 |
+
+**Overall: mAP = 54.3%**
 
 ### Comparison with State-of-the-Art Methods
 
@@ -73,8 +78,6 @@ Official PyTorch implementation of **SHPNet** for fine-grained aircraft detectio
 | **SHPNet (Ours)** | **80.5** | **54.3** |
 
 ---
-
-
 
 ## 🛠️ Getting Started
 
@@ -97,5 +100,3 @@ conda activate shpnet
 
 # Install dependencies
 pip install -r requirements.txt
-
-
