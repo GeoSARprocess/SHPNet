@@ -53,3 +53,29 @@ conda activate shpnet
 
 # Install dependencies
 pip install -r requirements.txt
+
+📊 Results
+Dataset	mAP (%)	GFLOPs	Params (M)
+SAR-RADD	80.5	31.4	13.6
+FAIR-CSAR	54.3	31.4	13.6
+<details> <summary>📈 Per-category results (click to expand)</summary>
+SAR-RADD (13 categories):
+
+Category	AP (%)	Category	AP (%)
+A	92.3	H	71.7
+B	92.8	I	90.1
+C	91.0	J	76.1
+D	78.4	K	43.1
+E	84.6	L	79.2
+F	79.1	M	90.5
+G	78.2		
+FAIR-CSAR (12 categories):
+
+Category	AP (%)	Category	AP (%)
+A220	61.6	B767	56.1
+A320	37.7	B777	22.3
+A330	69.7	Fokker-50	76.2
+Airfreighter	48.0	Gulfstream	37.3
+B737	70.7	Helicopter	77.7
+B747	70.1	Other	24.6
+</details>
