@@ -57,18 +57,22 @@ Official PyTorch implementation of **SHPNet** for fine-grained aircraft detectio
 </table>
 <p><strong>Overall: mAP = 54.3%</strong></p>
 
-Comparison with State-of-the-Art Methods
-Method	SAR-RADD mAP (%)	FAIR-CSAR mAP (%)
-Faster R-CNN	64.0	38.0
-RetinaNet	63.9	38.1
-RepPoints	70.9	41.6
-RoI Transformer	67.0	40.3
-S²ANet	69.6	41.6
-YOLOv11s	71.4	45.4
-DenoDet	72.3	42.0
-RTMDet-RSIM	75.6	43.3
-SAR-SFNet	79.3	50.6
-SHPNet (Ours)	80.5	54.3
+### Comparison with State-of-the-Art Methods
+
+| Method | SAR-RADD mAP (%) | FAIR-CSAR mAP (%) |
+|:---|:---:|:---:|
+| Faster R-CNN | 64.0 | 38.0 |
+| RetinaNet | 63.9 | 38.1 |
+| RepPoints | 70.9 | 41.6 |
+| RoI Transformer | 67.0 | 40.3 |
+| S²ANet | 69.6 | 41.6 |
+| YOLOv11s | 71.4 | 45.4 |
+| DenoDet | 72.3 | 42.0 |
+| RTMDet-RSIM | 75.6 | 43.3 |
+| SAR-SFNet | 79.3 | 50.6 |
+| **SHPNet (Ours)** | **80.5** | **54.3** |
+
+---
 
 
 
