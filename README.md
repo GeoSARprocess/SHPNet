@@ -9,9 +9,7 @@ Official PyTorch implementation of **SHPNet** for fine-grained aircraft detectio
 
 > **SHPNet: Shape-Aware Contrastive Learning and Hierarchical Semantic Prediction for Fine-Grained SAR Aircraft Detection**  
 > *Ru Luo, Lingjun Zhao, Qishan He, Siqian Zhang, Kefeng Ji*  
-> *ISPRS Journal of Photogrammetry and Remote Sensing*, 2026
 
----
 
 ## 🚀 News
 
