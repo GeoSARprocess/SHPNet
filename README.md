@@ -57,23 +57,18 @@ Official PyTorch implementation of **SHPNet** for fine-grained aircraft detectio
 </table>
 <p><strong>Overall: mAP = 54.3%</strong></p>
 
-<h3>Comparison with State-of-the-Art Methods</h3>
-<table>
-  <tr>
-    <th>Method</th><th>Backbone</th><th>SAR-RADD<br>mAP (%)</th>
-    <th>FAIR-CSAR<br>mAP (%)</th><th>GFLOPs</th><th>Params (M)</th>
-  </tr>
-  <tr><td>Faster R-CNN</td><td>ResNet-50</td><td>64.0</td><td>38.0</td><td>-</td><td>-</td></tr>
-  <tr><td>RetinaNet</td><td>ResNet-50</td><td>63.9</td><td>38.1</td><td>-</td><td>-</td></tr>
-  <tr><td>RepPoints</td><td>ResNet-50</td><td>70.9</td><td>41.6</td><td>-</td><td>-</td></tr>
-  <tr><td>RoI Transformer</td><td>ResNet-50</td><td>67.0</td><td>40.3</td><td>-</td><td>-</td></tr>
-  <tr><td>S²ANet</td><td>ResNet-50</td><td>69.6</td><td>41.6</td><td>-</td><td>-</td></tr>
-  <tr><td>YOLOv11s</td><td>CSPNet</td><td>71.4</td><td>45.4</td><td>22.3</td><td>9.7</td></tr>
-  <tr><td>DenoDet</td><td>-</td><td>72.3</td><td>42.0</td><td>-</td><td>-</td></tr>
-  <tr><td>RTMDet-RSIM</td><td>-</td><td>75.6</td><td>43.3</td><td>-</td><td>-</td></tr>
-  <tr><td>SAR-SFNet</td><td>-</td><td>79.3</td><td>50.6</td><td>-</td><td>-</td></tr>
-  <tr><td><strong>SHPNet (Ours)</strong></td><td>YOLOv11s</td><td><strong>80.5</strong></td><td><strong>54.3</strong></td><td><strong>31.4</strong></td><td><strong>13.6</strong></td></tr>
-</table>
+Comparison with State-of-the-Art Methods
+Method	SAR-RADD mAP (%)	FAIR-CSAR mAP (%)
+Faster R-CNN	64.0	38.0
+RetinaNet	63.9	38.1
+RepPoints	70.9	41.6
+RoI Transformer	67.0	40.3
+S²ANet	69.6	41.6
+YOLOv11s	71.4	45.4
+DenoDet	72.3	42.0
+RTMDet-RSIM	75.6	43.3
+SAR-SFNet	79.3	50.6
+SHPNet (Ours)	80.5	54.3
 
 
 
