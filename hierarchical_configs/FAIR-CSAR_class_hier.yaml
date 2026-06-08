@@ -1,0 +1,55 @@
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+path: /data/FAIR-CSAR-dataset/aircraft_yolo_hier_cls/
+train: images/train  # train images
+val: images/val  # val images 
+#test: images/test # test images
+
+nc: 12
+
+# Classes
+names:
+     0: 'Boeing777'
+     1: 'Airbus_A330'
+     2: 'Boeing747'
+     3: 'Boeing767'
+     4: 'Airbus_A220'
+     5: 'Boeing737'
+     6: 'Airbus_A320'
+     7: 'Gulfstream'
+     8: 'Fokker-50'
+     9: 'Airfreighter'
+     10: 'Helicopter'
+     11: 'Other_Aircraft'
+
+
+hierarchy_names: {
+    # Level 0: 
+    "0": {
+      "0": "Aircraft",
+    },
+    # Level 2: 
+    "1": {
+        "0": "Boeing",
+        "1": "Airbus",
+        "2": "Gulfstream",
+        "3": "Fokker",
+        "4": "Airfreighter",
+        "5": "Helicopter",
+        "6": "Other_Aircraft"
+    },
+    # Level 3: Specific aircraft model (ultimate fine-grained)
+    "2": {
+        "0": "Boeing777",
+        "1": "Airbus_A330",
+        "2": "Boeing747",
+        "3": "Boeing767",
+        "4": "Airbus_A220",
+        "5": "Boeing737",
+        "6": "Airbus_A320",
+        "7": "Gulfstream",
+        "8": "Fokker-50",
+        "9": "Airfreighter",
+        "10": "Helicopter",
+        "11": "Other_Aircraft"
+    }
+}
