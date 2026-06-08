@@ -10,13 +10,6 @@ Official PyTorch implementation of **SHPNet** for fine-grained aircraft detectio
 > *Ru Luo, Lingjun Zhao, Qishan He, Siqian Zhang, Kefeng Ji*  
 
 
-## 🚀 News
-
-- **[2026-06]** 🔥 Code and pretrained models released!
-- **[2026-06]** 🎉 Paper accepted by ISPRS Journal of Photogrammetry and Remote Sensing.
-
----
-
 ## 📖 Overview
 
 **SHPNet** addresses two core bottlenecks in fine-grained SAR aircraft detection:
