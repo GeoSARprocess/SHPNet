@@ -16,7 +16,7 @@ Official PyTorch implementation of **SHPNet** for fine-grained aircraft detectio
 
 | Bottleneck | Our Solution |
 |:---|:---|
-| **Azimuth-sensitive scattering** → unstable feature representations | **ShapeCL**: enforces geometric structural consistency across azimuths |
+| **Azimuth-sensitive scattering** → unstable feature representations | **ShapeCL**: geometric structural consistency with contrastive learning to enhance intra-class consistency feature learning against azimuth-sensitive scattering signature |
 | **Flat classification** → semantic confusion among similar subcategories | **HPH**: progressive coarse-to-fine hierarchical prediction |
 
 **Key results:**
