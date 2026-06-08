@@ -25,7 +25,7 @@ Official PyTorch implementation of **SHPNet** for fine-grained aircraft detectio
 - Model: **31.4 GFLOPs**, **13.6M params**
 
 <p align="center">
-  <img src="figures/framework.png" width="80%">
+  <img src="figures/Overall framework.png" width="80%">
   <br>
   <em>Figure 1: Overall framework of SHPNet.</em>
 </p>
