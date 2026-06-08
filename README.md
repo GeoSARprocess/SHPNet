@@ -31,7 +31,43 @@ Official PyTorch implementation of **SHPNet** for fine-grained aircraft detectio
 </p>
 
 ---
+## 📊 Experimental Results
 
+| Dataset | Overall mAP | GFLOPs | Params (M) |
+|:---|:---:|:---:|:---:|
+| SAR-RADD | **80.5%** | 31.4 | 13.6 |
+| FAIR-CSAR | **54.3%** | 31.4 | 13.6 |
+
+<details>
+<summary>📈 Per-category results on SAR-RADD (click to expand)</summary>
+
+| Category | A | B | C | D | E | F | G | H | I | J | K | L | M |
+|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| AP (%) | 92.3 | 92.8 | 91.0 | 78.4 | 84.6 | 79.1 | 78.2 | 71.7 | 90.1 | 76.1 | 43.1 | 79.2 | 90.5 |
+
+</details>
+
+<details>
+<summary>📈 Per-category results on FAIR-CSAR (click to expand)</summary>
+
+| Category | A220 | A320 | A330 | Airfree. | B737 | B747 | B767 | B777 | Fokker | Gulf | Heli | Other |
+|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| AP (%) | 61.6 | 37.7 | 69.7 | 48.0 | 70.7 | 70.1 | 56.1 | 22.3 | 76.2 | 37.3 | 77.7 | 24.6 |
+
+</details>
+
+<details>
+<summary>🏆 Comparison with state-of-the-art (click to expand)</summary>
+
+| Method | SAR-RADD | FAIR-CSAR | GFLOPs | Params |
+|:---|:---:|:---:|:---:|:---:|
+| Faster R-CNN | 64.0 | 38.0 | - | - |
+| RetinaNet | 63.9 | 38.1 | - | - |
+| YOLOv11s | 71.4 | 45.4 | 22.3 | 9.7 |
+| SAR-SFNet | 79.3 | 50.6 | - | - |
+| **SHPNet** | **80.5** | **54.3** | 31.4 | 13.6 |
+
+</details>
 ## 🛠️ Getting Started
 
 ### Prerequisites
@@ -54,28 +90,4 @@ conda activate shpnet
 # Install dependencies
 pip install -r requirements.txt
 
-📊 Results
-Dataset	mAP (%)	GFLOPs	Params (M)
-SAR-RADD	80.5	31.4	13.6
-FAIR-CSAR	54.3	31.4	13.6
-<details> <summary>📈 Per-category results (click to expand)</summary>
-SAR-RADD (13 categories):
 
-Category	AP (%)	Category	AP (%)
-A	92.3	H	71.7
-B	92.8	I	90.1
-C	91.0	J	76.1
-D	78.4	K	43.1
-E	84.6	L	79.2
-F	79.1	M	90.5
-G	78.2		
-FAIR-CSAR (12 categories):
-
-Category	AP (%)	Category	AP (%)
-A220	61.6	B767	56.1
-A320	37.7	B777	22.3
-A330	69.7	Fokker-50	76.2
-Airfreighter	48.0	Gulfstream	37.3
-B737	70.7	Helicopter	77.7
-B747	70.1	Other	24.6
-</details>
