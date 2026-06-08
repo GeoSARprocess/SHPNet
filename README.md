@@ -44,7 +44,7 @@ Official PyTorch implementation of **SHPNet** for fine-grained aircraft detectio
 
 ```bash
 # Clone the repository
-git clone https://github.com/[your-username]/SHPNet.git
+git clone https://github.com/GeoSARprocess/SHPNet.git
 cd SHPNet
 
 # Create conda environment (optional)
