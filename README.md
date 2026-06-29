@@ -1,19 +1,19 @@
-# SHPNet：Physical Prior-Guided Contrastive Learning and Hierarchical Semantic Refinement for Fine-Grained Aircraft Detection in SAR Imagery
+# Physical Prior-Guided Contrastive Learning and Hierarchical Semantic Refinement for Fine-Grained Aircraft Detection in SAR Imagery
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.8+-green.svg)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-1.9+-orange.svg)](https://pytorch.org/)
 
-Official PyTorch implementation of **SHPNet** for fine-grained aircraft detection in SAR imagery.
+Official PyTorch implementation Physical Prior-Guided Contrastive Learning and Hierarchical Semantic Refinement Fine-Grained Aircraft Detection in SAR Imagery.
 
-> **SHPNet：Physical Prior-Guided Contrastive Learning and Hierarchical Semantic Refinement for Fine-Grained Aircraft Detection in SAR Imagery**  
+> **Physical Prior-Guided Contrastive Learning and Hierarchical Semantic Refinement for Fine-Grained Aircraft Detection in SAR Imagery**  
 > *Ru Luo, Lingjun Zhao, Qishan He, Siqian Zhang, Kefeng Ji*
 
 ---
 
 ## 📖 Overview
 
-**SHPNet** addresses two core bottlenecks in fine-grained SAR aircraft detection:
+**The proposed method** addresses two core bottlenecks in fine-grained SAR aircraft detection:
 
 | Bottleneck | Our Solution |
 |:---|:---|
@@ -75,7 +75,7 @@ Official PyTorch implementation of **SHPNet** for fine-grained aircraft detectio
 | DenoDet | 72.3 | 42.0 |
 | RTMDet-RSIM | 75.6 | 43.3 |
 | SAR-SFNet | 79.3 | 50.6 |
-| **SHPNet (Ours)** | **80.5** | **54.3** |
+| **Ours** | **80.5** | **54.3** |
 
 ---
 
