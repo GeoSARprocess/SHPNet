@@ -1,4 +1,4 @@
-# SHPNet: Shape-Aware Contrastive Learning with Hierarchical Semantic Prediction for Fine-Grained SAR Aircraft Detection
+# SHPNet：Physical Prior-Guided Contrastive Learning and Hierarchical Semantic Refinement for Fine-Grained Aircraft Detection in SAR Imagery
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.8+-green.svg)](https://www.python.org/)
@@ -6,7 +6,7 @@
 
 Official PyTorch implementation of **SHPNet** for fine-grained aircraft detection in SAR imagery.
 
-> **SHPNet: Shape-Aware Contrastive Learning and Hierarchical Semantic Prediction for Fine-Grained SAR Aircraft Detection**  
+> **SHPNet：Physical Prior-Guided Contrastive Learning and Hierarchical Semantic Refinement for Fine-Grained Aircraft Detection in SAR Imagery**  
 > *Ru Luo, Lingjun Zhao, Qishan He, Siqian Zhang, Kefeng Ji*
 
 ---
@@ -17,8 +17,8 @@ Official PyTorch implementation of **SHPNet** for fine-grained aircraft detectio
 
 | Bottleneck | Our Solution |
 |:---|:---|
-| **Azimuth-sensitive scattering** → unstable feature representations | **ShapeCL**: geometric structural consistency with contrastive learning to enhance intra-class feature learning against azimuth-sensitive scattering |
-| **Flat classification** → semantic confusion among similar subcategories | **HPH**: progressive coarse-to-fine hierarchical prediction |
+| **Azimuth-sensitive scattering signature** → unstable feature representations | **Physical Prior-Guided Contrastive Learning (PPGCL)**: geometric structural consistency with contrastive learning to enhance intra-class feature learning against azimuth-sensitive scattering |
+| **Flat classification** → semantic confusion among similar subcategories | **HPR**: progressive coarse-to-fine hierarchical semantic refinement |
 
 **Key results:**
 - SAR-RADD: **80.5% mAP**
